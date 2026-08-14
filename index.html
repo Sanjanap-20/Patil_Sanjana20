@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ProBook X15 - Laptop</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f3f4f6;
+    color:#222;
+}
+
+header{
+    background:#111827;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    font-size:27px;
+}
+
+header span{
+    color:#38bdf8;
+}
+
+.container{
+    max-width:1100px;
+    margin:40px auto;
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 25px rgba(0,0,0,.1);
+}
+
+.product{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+    align-items:center;
+}
+
+.product-image{
+    text-align:center;
+}
+
+.product-image img{
+    width:100%;
+    max-width:500px;
+    border-radius:12px;
+}
+
+.product-info h2{
+    font-size:35px;
+    margin-bottom:12px;
+}
+
+.rating{
+    color:#f59e0b;
+    font-size:21px;
+    margin-bottom:15px;
+}
+
+.price{
+    font-size:32px;
+    font-weight:bold;
+    color:#16a34a;
+}
+
+.old-price{
+    text-decoration:line-through;
+    color:#888;
+    margin-left:10px;
+}
+
+.discount{
+    display:inline-block;
+    background:#dcfce7;
+    color:#15803d;
+    padding:7px 12px;
+    border-radius:6px;
+    margin:12px 0;
+}
+
+.description{
+    color:#555;
+    line-height:1.7;
+    margin:15px 0;
+}
+
+.features{
+    margin-top:20px;
+}
+
+.features h3{
+    margin-bottom:10px;
+}
+
+.features li{
+    list-style:none;
+    padding:7px 0;
+}
+
+.features li::before{
+    content:"✓ ";
+    color:#16a34a;
+    font-weight:bold;
+}
+
+.quantity{
+    margin:20px 0;
+}
+
+.quantity input{
+    width:60px;
+    padding:10px;
+    text-align:center;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:14px 30px;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+.specifications{
+    margin-top:45px;
+}
+
+.specifications h2{
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+td{
+    padding:14px;
+    border-bottom:1px solid #ddd;
+}
+
+td:first-child{
+    font-weight:bold;
+    width:35%;
+}
+
+footer{
+    text-align:center;
+    background:#111827;
+    color:white;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+    .product{
+        grid-template-columns:1fr;
+    }
+
+    .container{
+        margin:20px;
+        padding:20px;
+    }
+
+    .product-info h2{
+        font-size:28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Tech<span>Store</span></h1>
+    <p>Premium Laptops</p>
+</header>
+
+<div class="container">
+
+<div class="product">
+
+<div class="product-image">
+    <img
+    src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80"
+    alt="Laptop">
+</div>
+
+<div class="product-info">
+
+<h2>ProBook X15 Laptop</h2>
+
+<div class="rating">
+    ★★★★★
+    <span style="color:#555;font-size:15px;">
+        4.7/5 (524 Ratings)
+    </span>
+</div>
+
+<div>
+    <span class="price">₹54,999</span>
+    <span class="old-price">₹69,999</span>
+</div>
+
+<div class="discount">
+    21% OFF
+</div>
+
+<p class="description">
+    ProBook X15 is a powerful and stylish laptop designed
+    for students, professionals and everyday productivity.
+    Enjoy fast performance, a stunning display and long
+    battery life.
+</p>
+
+<div class="features">
+
+<h3>Key Features</h3>
+
+<ul>
+    <li>Intel Core i5 Processor</li>
+    <li>16GB RAM</li>
+    <li>512GB SSD Storage</li>
+    <li>15.6" Full HD Display</li>
+    <li>Backlit Keyboard</li>
+    <li>Up to 10 Hours Battery Life</li>
+</ul>
+
+</div>
+
+<div class="quantity">
+    <label>Quantity:</label>
+    <input type="number" id="quantity" value="1" min="1">
+</div>
+
+<button onclick="buyNow()">Buy Now</button>
+
+</div>
+
+</div>
+
+
+<div class="specifications">
+
+<h2>Product Specifications</h2>
+
+<table>
+
+<tr>
+<td>Brand</td>
+<td>TechStore</td>
+</tr>
+
+<tr>
+<td>Model</td>
+<td>ProBook X15</td>
+</tr>
+
+<tr>
+<td>Processor</td>
+<td>Intel Core i5 13th Gen</td>
+</tr>
+
+<tr>
+<td>RAM</td>
+<td>16GB DDR4</td>
+</tr>
+
+<tr>
+<td>Storage</td>
+<td>512GB SSD</td>
+</tr>
+
+<tr>
+<td>Display</td>
+<td>15.6" Full HD</td>
+</tr>
+
+<tr>
+<td>Graphics</td>
+<td>Intel Iris Xe Graphics</td>
+</tr>
+
+<tr>
+<td>Operating System</td>
+<td>Windows 11</td>
+</tr>
+
+<tr>
+<td>Warranty</td>
+<td>1 Year</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 TechStore | All Rights Reserved
+</footer>
+
+
+<script>
+
+function buyNow(){
+
+    let quantity =
+    document.getElementById("quantity").value;
+
+    let total = 54999 * quantity;
+
+    alert(
+        "Thank you for your order!\\n\\n" +
+        "Product: ProBook X15 Laptop\\n" +
+        "Quantity: " + quantity + "\\n" +
+        "Total Price: ₹" + total
+    );
+
+}
+
+</script>
+
+</body>
+</html>
