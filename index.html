@@ -1,361 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2WEL3G48HE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  gtag('config', 'G-2WEL3G48HE');
-</script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProBook X15 - TechStore</title>
 
-<title>ProBook X15 - Laptop</title>
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2WEL3G48HE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-body{
-    background:#f3f4f6;
-    color:#222;
-}
+        gtag('js', new Date());
+        gtag('config', 'G-2WEL3G48HE');
+    </script>
 
-header{
-    background:#111827;
-    color:white;
-    padding:20px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-header h1{
-    font-size:27px;
-}
+        body {
+            background: #f3f4f6;
+            color: #222;
+        }
 
-header span{
-    color:#38bdf8;
-}
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
 
-.container{
-    max-width:1100px;
-    margin:40px auto;
-    background:white;
-    padding:35px;
-    border-radius:15px;
-    box-shadow:0 5px 25px rgba(0,0,0,.1);
-}
+        header h1 {
+            font-size: 27px;
+        }
 
-.product{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:45px;
-    align-items:center;
-}
+        header span {
+            color: #38bdf8;
+        }
 
-.product-image{
-    text-align:center;
-}
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+        }
 
-.product-image img{
-    width:100%;
-    max-width:500px;
-    border-radius:12px;
-}
+        .product {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            align-items: center;
+        }
 
-.product-info h2{
-    font-size:35px;
-    margin-bottom:12px;
-}
+        .product-image {
+            text-align: center;
+        }
 
-.rating{
-    color:#f59e0b;
-    font-size:21px;
-    margin-bottom:15px;
-}
+        .product-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 12px;
+        }
 
-.price{
-    font-size:32px;
-    font-weight:bold;
-    color:#16a34a;
-}
+        .product-info h2 {
+            font-size: 35px;
+            margin-bottom: 12px;
+        }
 
-.old-price{
-    text-decoration:line-through;
-    color:#888;
-    margin-left:10px;
-}
+        .rating {
+            color: #f59e0b;
+            font-size: 21px;
+            margin-bottom: 15px;
+        }
 
-.discount{
-    display:inline-block;
-    background:#dcfce7;
-    color:#15803d;
-    padding:7px 12px;
-    border-radius:6px;
-    margin:12px 0;
-}
+        .price {
+            font-size: 32px;
+            font-weight: bold;
+            color: #16a34a;
+        }
 
-.description{
-    color:#555;
-    line-height:1.7;
-    margin:15px 0;
-}
+        .old-price {
+            text-decoration: line-through;
+            color: #888;
+            margin-left: 10px;
+        }
 
-.features{
-    margin-top:20px;
-}
+        .discount {
+            display: inline-block;
+            background: #dcfce7;
+            color: #15803d;
+            padding: 7px 12px;
+            border-radius: 6px;
+            margin: 12px 0;
+        }
 
-.features h3{
-    margin-bottom:10px;
-}
+        .description {
+            color: #555;
+            line-height: 1.7;
+            margin: 15px 0;
+        }
 
-.features li{
-    list-style:none;
-    padding:7px 0;
-}
+        .features {
+            margin-top: 20px;
+        }
 
-.features li::before{
-    content:"✓ ";
-    color:#16a34a;
-    font-weight:bold;
-}
+        .features h3 {
+            margin-bottom: 10px;
+        }
 
-.quantity{
-    margin:20px 0;
-}
+        .features li {
+            list-style: none;
+            padding: 7px 0;
+        }
 
-.quantity input{
-    width:60px;
-    padding:10px;
-    text-align:center;
-    border:1px solid #ccc;
-    border-radius:5px;
-}
+        .features li::before {
+            content: "✓ ";
+            color: #16a34a;
+            font-weight: bold;
+        }
 
-button{
-    background:#2563eb;
-    color:white;
-    border:none;
-    padding:14px 30px;
-    border-radius:8px;
-    font-size:17px;
-    cursor:pointer;
-}
+        .quantity {
+            margin: 20px 0;
+        }
 
-button:hover{
-    background:#1d4ed8;
-}
+        .quantity input {
+            width: 75px;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
-.specifications{
-    margin-top:45px;
-}
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 8px;
+            font-size: 17px;
+            cursor: pointer;
+        }
 
-.specifications h2{
-    margin-bottom:20px;
-}
+        button:hover {
+            background: #1d4ed8;
+        }
 
-table{
-    width:100%;
-    border-collapse:collapse;
-}
+        button:focus-visible,
+        input:focus-visible {
+            outline: 3px solid #38bdf8;
+            outline-offset: 3px;
+        }
 
-td{
-    padding:14px;
-    border-bottom:1px solid #ddd;
-}
+        .specifications {
+            margin-top: 45px;
+        }
 
-td:first-child{
-    font-weight:bold;
-    width:35%;
-}
+        .specifications h2 {
+            margin-bottom: 20px;
+        }
 
-footer{
-    text-align:center;
-    background:#111827;
-    color:white;
-    padding:20px;
-    margin-top:40px;
-}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
 
-@media(max-width:768px){
-    .product{
-        grid-template-columns:1fr;
-    }
+        td {
+            padding: 14px;
+            border-bottom: 1px solid #ddd;
+        }
 
-    .container{
-        margin:20px;
-        padding:20px;
-    }
+        td:first-child {
+            font-weight: bold;
+            width: 35%;
+        }
 
-    .product-info h2{
-        font-size:28px;
-    }
-}
-</style>
+        footer {
+            text-align: center;
+            background: #111827;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 23px;
+            }
+
+            .product {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+
+            .product-info h2 {
+                font-size: 28px;
+            }
+
+            .price {
+                font-size: 27px;
+            }
+
+            .old-price {
+                font-size: 15px;
+            }
+
+            td {
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Tech<span>Store</span></h1>
-    <p>Premium Laptops</p>
-</header>
+    <header>
+        <h1>Tech<span>Store</span></h1>
+        <p>Premium Laptops</p>
+    </header>
 
-</script>
-    
-<div class="container">
+    <main class="container">
 
-<div class="product">
+        <section class="product">
 
-<div class="product-image">
-    <img
-    src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80"
-    alt="Laptop">
-</div>
+            <div class="product-image">
+                <img
+                    src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                    alt="ProBook X15 laptop"
+                >
+            </div>
 
-<div class="product-info">
+            <div class="product-info">
 
-<h2>ProBook X15 Laptop</h2>
+                <h2>ProBook X15 Laptop</h2>
 
-<div class="rating">
-    ★★★★★
-    <span style="color:#555;font-size:15px;">
-        4.7/5 (524 Ratings)
-    </span>
-</div>
+                <div class="rating">
+                    ★★★★★
+                    <span style="color:#555;font-size:15px;">
+                        4.7/5 (524 Ratings)
+                    </span>
+                </div>
 
-<div>
-    <span class="price">₹54,999</span>
-    <span class="old-price">₹69,999</span>
-</div>
+                <div>
+                    <span class="price">₹54,999</span>
+                    <span class="old-price">₹69,999</span>
+                </div>
 
-<div class="discount">
-    21% OFF
-</div>
+                <div class="discount">21% OFF</div>
 
-<p class="description">
-    ProBook X15 is a powerful and stylish laptop designed
-    for students, professionals and everyday productivity.
-    Enjoy fast performance, a stunning display and long
-    battery life.
-</p>
+                <p class="description">
+                    ProBook X15 is a powerful and stylish laptop designed
+                    for students, professionals and everyday productivity.
+                    Enjoy fast performance, a stunning display and long
+                    battery life.
+                </p>
 
-<div class="features">
+                <div class="features">
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Intel Core i5 Processor</li>
+                        <li>16GB RAM</li>
+                        <li>512GB SSD Storage</li>
+                        <li>15.6" Full HD Display</li>
+                        <li>Backlit Keyboard</li>
+                        <li>Up to 10 Hours Battery Life</li>
+                    </ul>
+                </div>
 
-<h3>Key Features</h3>
+                <div class="quantity">
+                    <label for="quantity">Quantity:</label>
+                    <input
+                        type="number"
+                        id="quantity"
+                        value="1"
+                        min="1"
+                        max="99"
+                        step="1"
+                        required
+                    >
+                </div>
 
-<ul>
-    <li>Intel Core i5 Processor</li>
-    <li>16GB RAM</li>
-    <li>512GB SSD Storage</li>
-    <li>15.6" Full HD Display</li>
-    <li>Backlit Keyboard</li>
-    <li>Up to 10 Hours Battery Life</li>
-</ul>
+                <button type="button" id="buyNowButton">
+                    Buy Now
+                </button>
 
-</div>
+            </div>
+        </section>
 
-<div class="quantity">
-    <label>Quantity:</label>
-    <input type="number" id="quantity" value="1" min="1">
-</div>
+        <section class="specifications">
+            <h2>Product Specifications</h2>
 
-<button onclick="buyNow()">Buy Now</button>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Brand</td>
+                        <td>TechStore</td>
+                    </tr>
+                    <tr>
+                        <td>Model</td>
+                        <td>ProBook X15</td>
+                    </tr>
+                    <tr>
+                        <td>Processor</td>
+                        <td>Intel Core i5 13th Gen</td>
+                    </tr>
+                    <tr>
+                        <td>RAM</td>
+                        <td>16GB DDR4</td>
+                    </tr>
+                    <tr>
+                        <td>Storage</td>
+                        <td>512GB SSD</td>
+                    </tr>
+                    <tr>
+                        <td>Display</td>
+                        <td>15.6" Full HD</td>
+                    </tr>
+                    <tr>
+                        <td>Graphics</td>
+                        <td>Intel Iris Xe Graphics</td>
+                    </tr>
+                    <tr>
+                        <td>Operating System</td>
+                        <td>Windows 11</td>
+                    </tr>
+                    <tr>
+                        <td>Warranty</td>
+                        <td>1 Year</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-</div>
+    </main>
 
-</div>
+    <footer>
+        © 2026 TechStore | All Rights Reserved
+    </footer>
 
+    <script>
+        const buyNowButton = document.getElementById("buyNowButton");
+        const quantityInput = document.getElementById("quantity");
 
-<div class="specifications">
+        const productPrice = 54999;
+        const productName = "ProBook X15 Laptop";
 
-<h2>Product Specifications</h2>
+        buyNowButton.addEventListener("click", function () {
+            const quantity = Number(quantityInput.value);
 
-<table>
+            // Validate quantity before proceeding
+            if (
+                !Number.isInteger(quantity) ||
+                quantity < 1 ||
+                quantity > 99
+            ) {
+                alert("Please enter a quantity between 1 and 99.");
+                quantityInput.focus();
+                return;
+            }
 
-<tr>
-<td>Brand</td>
-<td>TechStore</td>
-</tr>
+            const total = productPrice * quantity;
 
-<tr>
-<td>Model</td>
-<td>ProBook X15</td>
-</tr>
+            // Track the Buy Now button click in Google Analytics
+            if (typeof window.gtag === "function") {
+                gtag("event", "buy_now_click", {
+                    currency: "INR",
+                    value: total,
+                    items: [
+                        {
+                            item_id: "PROBOOK-X15",
+                            item_name: productName,
+                            price: productPrice,
+                            quantity: quantity
+                        }
+                    ]
+                });
+            }
 
-<tr>
-<td>Processor</td>
-<td>Intel Core i5 13th Gen</td>
-</tr>
-
-<tr>
-<td>RAM</td>
-<td>16GB DDR4</td>
-</tr>
-
-<tr>
-<td>Storage</td>
-<td>512GB SSD</td>
-</tr>
-
-<tr>
-<td>Display</td>
-<td>15.6" Full HD</td>
-</tr>
-
-<tr>
-<td>Graphics</td>
-<td>Intel Iris Xe Graphics</td>
-</tr>
-
-<tr>
-<td>Operating System</td>
-<td>Windows 11</td>
-</tr>
-
-<tr>
-<td>Warranty</td>
-<td>1 Year</td>
-</tr>
-
-</table>
-
-</div>
-
-</div>
-
-<footer>
-© 2026 TechStore | All Rights Reserved
-</footer>
-
-
-<script>
-
-function buyNow(){
-
-    let quantity =
-    document.getElementById("quantity").value;
-
-    let total = 54999 * quantity;
-
-    alert(
-        "Thank you for your order!\\n\\n" +
-        "Product: ProBook X15 Laptop\\n" +
-        "Quantity: " + quantity + "\\n" +
-        "Total Price: ₹" + total
-    );
-
-}
-
-</script>
+            alert(
+                "Thank you for your order!\n\n" +
+                "Product: " + productName + "\n" +
+                "Quantity: " + quantity + "\n" +
+                "Total Price: ₹" + total.toLocaleString("en-IN")
+            );
+        });
+    </script>
 
 </body>
 </html>
